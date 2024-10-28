@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Temperature Converter</h1>
+        <select name="" id="conversion_select" v-model="conversion">
+            <option value="default" default>Select...</option>
+            <option value="toC">Farenheit to Celsius</option>
+            <option value="toF">Celsius to Farenheit</option>
+        </select>
+        <input type="text" name="temp" id="temp" placeholder="Temperature" v-model="temp" />
+        <button type="submit" id="submit" v-on:click="checkFC">Convert</button>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

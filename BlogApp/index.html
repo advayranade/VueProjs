@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue</title>
+  </head>
+  <body>
+    <div id="app">
+      <label for="name">Blogger Name: </label>
+      <input v-model="bloggerName" id="name" />
+      <button @click="nameSubmit" type="submit">Submit</button>
+      <br />
+      <h1 v-if="isNameSet">{{bloggerName}}'s Blog</h1>
+      <button v-if="isNameSet" @click="newBlogPost">
+        Create new blog post!
+      </button>
+      <div v-for="item in items" v-html="item" @click="handleAddClick"></div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="app.js"></script>
+</html>

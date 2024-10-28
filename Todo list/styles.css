@@ -1,0 +1,35 @@
+#tasks,#completedTasks {
+    list-style-type: none;
+}
+
+body {
+    font-family: sans-serif;    
+}
+#app {
+    width:500px;
+    margin: 0 auto;
+}
+
+
+#tasks li {
+    margin: 5px;
+}
+
+
+#todo {
+    margin:10px;
+}
+
+#subhead {
+    position: relative;
+
+}
+
+#app {
+    text-align: center;
+    margin-top:10px;
+}
+
+#app form {
+    margin-left:114px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div id="container">
+            <div id="calculator">
+                <div id="answer">{{log}}</div>
+                <table id="calculator-keys">
+                    <tbody>
+                        <tr>
+                            <td><button class="btn operator" @click="clear">C</button></td>
+                            <td><button class="btn operator" @click="positiveNegative">+/-</button></td>
+                            <td><button class="btn operator" @click="percent">%</button></td>
+                            <td><button class="btn operator" @click="divide">/</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn" @click="addNumber">7</button></td>
+                            <td><button class="btn" @click="addNumber">8</button></td>
+                            <td><button class="btn" @click="addNumber">9</button></td>
+                            <td><button class="btn operator" @click="multiply">*</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn" @click="addNumber">4</button></td>
+                            <td><button class="btn" @click="addNumber">5</button></td>
+                            <td><button class="btn" @click="addNumber">6</button></td>
+                            <td><button class="btn operator" @click="minus">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn" @click="addNumber">1</button></td>
+                            <td><button class="btn" @click="addNumber">2</button></td>
+                            <td><button class="btn" @click="addNumber">3</button></td>
+                            <td><button class="btn operator" @click="plus">+</button></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="btn" @click="addNumber">0</button></td>
+                            <td><button class="btn" @click="addNumber">.</button></td>
+                            <td><button class="btn operator" @click="equal">=</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

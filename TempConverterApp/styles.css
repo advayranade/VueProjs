@@ -1,0 +1,27 @@
+input, select {
+    /* width: 590px; */
+    font-size: 15px;
+    border-radius: 10px;
+    padding-left: 15px;
+    height: 30px;
+    /* padding-top: 30px; */
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    /* display: inline; */
+    border-radius: 10px;
+    background-color: #137792;
+    color: white;
+    font-size: 20px; 
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.converted {
+    margin-left: 10px;
+    font-size: 30px;
+}

@@ -1,0 +1,23 @@
+#app,#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height:100vh;
+}
+
+#container {
+    background-color: lightblue;
+    width:50vw;
+    height:50vh;
+}
+
+#chat-history {
+    position: relative;
+    bottom: 39px;
+    left: -4px;
+}
+
+body {
+    background-color: white;
+}

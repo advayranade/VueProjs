@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Document</title>
+  
+</head>
+<body>
+    <div id="app">
+        <h1 id="head">To-do List</h1>
+        <ul id="tasks">
+            <li v-for="task in tasks" ><input type="checkbox" @change="completeTask"> <span>{{task}}</span>   <button class="del btn btn-primary btn-sm" @click="deleteTask">delete</button></li>
+        </ul>
+        <form onsubmit="return false" class="form form-inline">
+            <div class="input-group">
+                <input type="text" id="todo" placeholder="type todo here" v-model="todo" class="form-control"/>
+            </div>
+            <button v-on:click="addTask" class="btn btn-primary" id="add">Add!</button>
+        
+        </form>
+        <h2 id="subhead">Completed Tasks</h2>
+        <ul id="completedTasks">
+            <li v-for="compTask in completeTasks"><input type="checkbox" checked disabled> <span>{{compTask}}</span></li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
